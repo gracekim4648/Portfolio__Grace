@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <meta name="description" content="Portfolio for Frontend Developer Grace" />
+    <meta name="author" content="Grace" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/2840ed5078.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <a href="#" class="navbar__logo__color">
+          <i class="fab fa-diaspora"></i>
+          Grace's Portfolio
+        </a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Certifications</li>
+        <li class="navbar__menu__item" data-link="#work">Experiences</li>
+        <li class="navbar__menu__item" data-link="#testimonials">
+          Testimonial
+        </li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Tiggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="imgs/Resume.jpg"
+          alt="Grace's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">
+          Hello,<br />
+          I'm Grace
+        </h1>
+        <h2 class="home__description">IT Engineer</h2>
+        <button class="home__contact">CONTACT ME</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p class="about__introduction">
+        I am a self-motivated IT engineer who's eager to learn and grow
+        continuously to develop innovative solutions for people. 2-3 years of IT
+        experience is in systems, network, and security, but I was inspired to
+        become a member of the software development team by a direct family
+        member's influence who's a software engineer. I am consistently
+        recognized as a competent, meticulous, responsible, and diligent person
+        and engineer, skilled at collaborating with cross-functional teams in a
+        fast-paced and deadline-driven environment.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <!-- <a href="https://github.com/gracekim4648" target="_blank"> -->
+            <i class="fa-brands fa-html5"></i>
+            <!-- </a> -->
+          </div>
+          <h2 class="major__title">Web Development</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript, <br />
+            Postman, Bootstrap, React
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <!-- <a href="https://github.com/gracekim4648" target="_blank"> -->
+            <i class="fa-solid fa-network-wired"></i>
+            <!-- </a> -->
+          </div>
+          <h2 class="major__title">Network</h2>
+          <p class="major__description">Layer 3, 4, and 7</p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <!-- <a href="https://github.com/gracekim4648" target="_blank"> -->
+            <i class="fa-solid fa-cloud"></i>
+            <!-- </a> -->
+          </div>
+          <h2 class="major__title">Cloud</h2>
+          <p class="major__description">AWS and Azure</p>
+        </div>
+      </div>
+      <!-- <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/Teksystem.png"
+            alt="Teksystem"
+            class="job__logo00"
+          />
+          <img
+            src="imgs/jobs/Microsoft.png"
+            alt="Microsoft"
+            class="job__logo0"
+          />
+          <div class="job__description">
+            <p class="job__name">Azure Network Support Engineer</p>
+            <p class="job__period">2022 Aug - Now</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="imgs/jobs/RedRiver.png" alt="RedRiver" class="job__logo2" />
+          <div class="job__description">
+            <p class="job__name">Junior Tech and Network engineer</p>
+            <p class="job__period">2019 - 2022</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Certifications</h1>
+        <div class="skillset">
+          <div class="skill__box">
+            <img class="skill__img" src="./imgs/certifications/ccna.jpg" alt />
+            <h3 class="cert__name">Cisco Certified Network Associate</h3>
+          </div>
+          <div class="skill__box">
+            <img class="skill__img" src="./imgs/certifications/aws.png" alt />
+            <h3 class="cert__name">
+              AWS Certified: <br />
+              Solutions Architect Associate
+            </h3>
+          </div>
+          <div class="skill__box">
+            <img class="skill__img" src="./imgs/certifications/azure.png" alt />
+            <h3 class="cert__name">
+              Microsoft Certified: Azure Administrator Associate
+            </h3>
+          </div>
+          <div class="skill__box">
+            <img class="skill__img" src="./imgs/certifications/a.png" alt />
+            <h3 class="cert__name">CompTIA A+ ce</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Android Studio</span></li>
+                <li><span>iOS Development tools</span></li>
+                <li><span>sublime text</span></li>
+                <li><span>Sketch app</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Scrum master</span></li>
+                <li><span>Wireshark</span></li>
+              </ul>
+            </div>
+          </div>
+      </div> -->
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>Experiences</h1>
+        <!-- <h3></h3>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All<span class="category__count">8</span>
+        </button>
+        <button class="category__btn" data-filter="front-end">
+          Front-end<span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="back-end">
+          Back-end<span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="mobile">
+          Mobile<span class="category__count">2</span>
+        </button>
+      </div> -->
+        <div class="work__projects">
+          <div class="project">
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#sheehy"
+            >
+              <img
+                src="imgs/jobs/sheehy.png"
+                alt="Youtube"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Business Analyst</h3>
+                <span>May 2019 - Mar 2020</span>
+              </div>
+            </button>
+          </div>
+
+          <div class="project">
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#redriver"
+            >
+              <img
+                src="imgs/jobs/RedRiver.png"
+                alt="Shopping Site"
+                class="project__img"
+                style="width: 80%"
+              />
+              <div class="project__description">
+                <h3>N.O.C Engineer</h3>
+                <span>Mar 2022 - Aug 2022</span>
+                <br />
+                <h3>Junior Engineer</h3>
+                <span>Oct 2020 - Mar 2022</span>
+              </div>
+            </button>
+          </div>
+
+          <div class="project">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#teks">
+              <div class="project__img">
+                <img
+                  src="imgs/jobs/Teksystem.png"
+                  alt="Shopping Site"
+                  class="project__img2"
+                />
+                <img
+                  src="imgs/jobs/Microsoft.png"
+                  alt="Shopping Site"
+                  class="project__img2"
+                />
+              </div>
+              <div class="project__description">
+                <h3>Azure Network Support Engineer</h3>
+                <span>Aug 2022 - Present</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="section__container">
+        <h1>Testimonials</h1>
+        <h3>see what they say about me</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="imgs/Susanna.png"
+              alt="People"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                I've known Grace for eight years, and I had an absolute pleasure
+                working with her. She always exceeded expectations and was an
+                incredible team player and leader. She always offered to help
+                teammates with a positive attitude and led as a teacher and lead
+                singer for several years. She knows how to wear different hats
+                when needed while also being detail-oriented
+              </p>
+              <p class="name">
+                <a href="https://www.linkedin.com/in/sno/">Susanna No</a> /
+                Manager / OnPrem a Qvest Company
+              </p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>More testimonials coming soon!</p>
+
+              <p class="name"><a href="">""</a> /</p>
+            </div>
+            <img
+              src="imgs/testimonials/Screen Shot 2023-03-20 at 5.03.43 PM.png"
+              alt="People"
+              class="testimonial__avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+
+      <a
+        href="./imgs/favicon.png"
+        target="_blank"
+        download
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <i
+          class="fa-sharp fa-solid fa-file fa-2x"
+          style="margin-right: 20px"
+        ></i>
+        <h2 class="contact__email">Click to Download My Resume</h2></a
+      >
+
+      <div class="contact__links">
+        <a href="mailto: gracekim4648@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope fa-md"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/grace-kimm/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-md"></i>
+        </a>
+      </div>
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+
+      <div
+        class="modal fade"
+        id="sheehy"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Sheehy</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="text-start">Business Analyst</h3>
+              <div class="text-start">May 2019 - Mar 2020</div>
+              <div class="text-start mt-3">
+                Analyze databases to identify trends that optimize the marketing
+                activities and sales performance of all products
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="redriver"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Red River</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="text-start">Network Operation Center Engineer</h3>
+              <div class="text-start">Mar 2022 - Aug 2022</div>
+              <div class="text-start mt-3">
+                Monitor and manage the network performance and capability of
+                systems such as instances, firewalls, switches, access points,
+                POS, Veeder-Root, and ISP circuits using Logic Monitor, Meraki,
+                and AWS portal for over 300+ clients
+                <h3 class="text-start mt-4">Junior Engineer</h3>
+                <div class="text-start">Oct 2020 - Mar 2022</div>
+                <div class="text-start mt-3">
+                  Diagnose issues related to network, systems, software,
+                  security, and hardware
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="teks"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                TEKsystems/Microsoft
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="text-start">Azure Network Support Engineer</h3>
+              <div class="text-start">Aug 2022 - Present</div>
+              <div class="text-start mt-3">
+                Troubleshoot complex Azure Networking issues under a
+                high-pressure environment, handling severity A cases for
+                organizations such as Fortune 500 companies, governments, and
+                universities
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arrow Up -->
+    <button class="arrow-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
